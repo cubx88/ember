@@ -3,8 +3,6 @@ import { setupRenderingTest } from 'super-rentals/tests/helpers';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-
-
 module('Integration | Component | jumbo', function (hooks) {
   setupRenderingTest(hooks);
   test('it renders the content inside a jumbo header with a tomster', async function (assert) {
@@ -12,6 +10,5 @@ module('Integration | Component | jumbo', function (hooks) {
     assert.dom('.jumbo').exists();
     assert.dom('.jumbo').hasText('Hello World');
     assert.dom('.jumbo .tomster').exists();
-
   });
 });
